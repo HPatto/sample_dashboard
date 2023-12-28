@@ -78,11 +78,22 @@ body {
 
 /* Here we have the content styles */
 
-.articles-zone {
+.articles-zone,
+.trending-zone {
+    display: grid;
+    grid-template-rows: 1fr repeat(10, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); */
+    /* gap: 16px; */
+    /* background-color: brown; */
+}
+
+.article-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
     gap: 16px;
+    grid-row: 2 / 12;
     /* background-color: brown; */
+
 }
 
 .article-card {
@@ -96,10 +107,45 @@ body {
 
 .article-title {
     color: rgb(38, 38, 38);
+    grid-row: 1 / 2;
 }
 
 .article-source,
 .article-author {
     color: lightslategray;
     margin-top: 16px;
+}
+
+.content-zones {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.trending-zone {
+    display: grid;
+    grid-template-rows: 1fr repeat(10, 1fr);
+}
+
+.trending-title {
+    grid-row: 1 / 2;
+}
+
+.trending-content {
+    grid-row: 2 / 12;
+    border: 3px solid red;
+}
+
+.trending-content ol {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: 1px solid gold;
+}
+
+.trending-content li {
+    flex: 1 0 auto;
+    font-size: 20px;
+    /* line-height: 2; */
+    border: 2px solid cyan;
 }
