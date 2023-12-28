@@ -124,6 +124,7 @@ body {
 .trending-zone {
     display: grid;
     grid-template-rows: 1fr repeat(10, 1fr);
+    margin-left: 10%;
 }
 
 .trending-title {
@@ -133,6 +134,7 @@ body {
 .trending-content {
     grid-row: 2 / 12;
     border: 3px solid red;
+    
 }
 
 .trending-content ol {
@@ -141,11 +143,36 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     border: 1px solid gold;
+    /* gap: 4px; */
 }
 
 .trending-content li {
-    flex: 1 0 auto;
+    flex: 1 1 1;
     font-size: 20px;
     /* line-height: 2; */
     border: 2px solid cyan;
+    background-color: bisque;
+}
+
+.trending-topic {
+    color: rgb(38, 38, 38);
+}
+
+.trending-genre {
+    color: lightslategray;
+}
+
+.trending-item {
+    padding: 4px;
+    border: 2px solid black;
+}
+
+.trending-topic p {
+    color: rgb(38, 38, 38);
+    font-size: 16px;
+}
+
+.trending-genre {
+    color: lightslategray;
+    font-size: 12px;
 }
