@@ -35,7 +35,7 @@ body {
 
 /* Here we have sidebar styles */
 
-#title {
+/* #title {
     color: white;
     font-size: 24px;
     text-align: center;
@@ -50,7 +50,7 @@ body {
     /* grid-column: 1 / 2; */
     /* grid-row: 1 / 2; */
     /* border: 2px solid lime; */
-}
+/* } */
 
 #nav-links {
     display: flex;
@@ -68,9 +68,9 @@ body {
     /* border: 1px solid orange; */
 }
 
-#personal {
+/* #personal {
 
-}
+} */
 
 #company {
     border-top: 2px solid white;
