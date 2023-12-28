@@ -78,10 +78,17 @@ body {
 
 /* Here we have the content styles */
 
+.articles-zone {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    gap: 16px;
+    /* background-color: brown; */
+}
+
 .article-card {
     background-color: beige;
     border-radius: 5px;
-    width: 200px;
+    min-width: 200px;
 
     padding: 16px;
 
