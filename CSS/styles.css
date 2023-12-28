@@ -29,6 +29,8 @@ body {
     background-color: cadetblue;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    padding: 16px;
 }
 
 /* Here we have sidebar styles */
@@ -72,4 +74,25 @@ body {
 
 #company {
     border-top: 2px solid white;
+}
+
+/* Here we have the content styles */
+
+.article-card {
+    background-color: beige;
+    border-radius: 5px;
+    width: 200px;
+
+    padding: 16px;
+
+}
+
+.article-title {
+    color: rgb(38, 38, 38);
+}
+
+.article-source,
+.article-author {
+    color: lightslategray;
+    margin-top: 16px;
 }
