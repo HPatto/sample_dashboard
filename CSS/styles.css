@@ -178,3 +178,9 @@ body {
     color: lightslategray;
     font-size: 12px;
 }
+
+.profile-summary {
+    display: grid;
+    padding: 16px;
+    grid-template-columns: 8fr repeat(2, 1fr);
+}
